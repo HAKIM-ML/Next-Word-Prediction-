@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Word Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Next Word Predictor</h1>
+        <p class="description">This is a deep learning project for predicting the next word using LSTM (Long Short Term Memory). You can find the notebook on Kaggle <a href="https://www.kaggle.com/code/hakim11/next-word-predictor-using-lstm" target="_blank">here</a> and the full project on GitHub <a href="https://github.com/DreamIsMl" target="_blank">here</a>.</p>
+        <div class="search-box">
+            <input type="text" id="seed_text" placeholder="Enter your text here...">
+        </div>
+        <div id="recommendations"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

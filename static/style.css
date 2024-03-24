@@ -1,0 +1,74 @@
+body {
+    background-image: url("p.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Light black background behind the title */
+    padding: 10px; /* Add padding to the title for better readability */
+    border-radius: 10px; /* Rounded corners for the title background */
+    animation: neon-glow 1.5s ease-in-out infinite alternate; /* Animated neon glow effect for title */
+}
+
+.description {
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Light black background behind the description */
+    padding: 10px; /* Add padding to the description for better readability */
+    border-radius: 10px; /* Rounded corners for the description background */
+    color: rgba(255, 255, 255, 0.8); /* Semi-transparent white color for description */
+}
+
+.search-box {
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 20px; /* Rounded corners for the input box */
+    overflow: hidden; /* Hide overflow to hide rounded corners overflow */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+#recommendations {
+    text-align: left;
+}
+
+#recommendations p {
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Light black background behind the predicted text */
+    padding: 5px; /* Add padding to the predicted text for better readability */
+    border-radius: 5px; /* Rounded corners for the predicted text background */
+    color: #fff; /* Set text color to white */
+}
+
+@keyframes neon-glow {
+    0% {
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #00ff00, 0 0 30px #0000ff; /* Neon light effect with animated colors */
+    }
+    100% {
+        text-shadow: 0 0 20px #ff0000, 0 0 30px #00ff00, 0 0 40px #0000ff; /* Neon light effect with animated colors */
+    }
+}
